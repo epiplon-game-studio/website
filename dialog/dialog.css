@@ -1,0 +1,74 @@
+html {
+    --dialog-duration: 0.3s;
+}
+
+.overlay-dialog {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 90vw;
+    height: 90vh;
+    border-radius: 15px;
+    left: 5vw;
+    top: 100vh;
+}
+
+.overlay-dialog div {
+    margin: 50px;
+}
+
+.overlay-dialog .dialog-close {
+    color: white;
+    position: absolute;
+    right: 50px;
+    font-size: 64px;
+}
+
+.show {
+    animation-name: dialogShow;
+    animation-duration: var(--dialog-duration);
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.hide {
+    animation-name: dialogHide;
+    animation-duration: var(--dialog-duration);
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dialogShow {
+    from {
+        top: 100vh;
+    }
+
+    to {
+        top: 5vh;
+    }
+}
+
+@keyframes dialogHide {
+    to {
+        top: 100vh;
+    }
+
+    from {
+        top: 5vh;
+    }
+}
+
+.asset-link {
+    position: relative;
+    display: inline-block;
+}
+
+.asset-link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

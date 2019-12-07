@@ -8,27 +8,30 @@
     <title>Epiplon Game Studio</title>
 
     <script src="assets/font-awesome/js/all.min.js"></script>
-
+    <script src="dialog/dialog.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div id="intro">
         <div id="background"></div>
         <div id="logo"></div>
-        <h1 id=title>Epiplon Game Studio</h1>
+        <h1 id=title>Epiplon Studio</h1>
     </div>
     <div id="content">
         <section id="projects">
             <h2>Projects</h2>
             <div id="project-list">
                 <div class="project-entry">
-                    <div class="project-image"></div>
-                    <h3>Project Title</h3>
+                    <a onclick="toggleDialog('retrocontroller')" href="javascript:void(0);">
+                        <div class="project-image">
+                            <img src="assets/retro_controller.png" alt="Retro Controller">
+                        </div>
+                    </a>
                 </div>
                 <div class="project-entry">
                     <div class="project-image"></div>
-                    <h3>Project Title</h3>
                 </div>
             </div>
         </section>
@@ -57,7 +60,10 @@
                     </a>
                 </div>
                 <div class="contact-icon">
-                    <i class="fas fa-envelope-square"></i>
+                    <a href="mailto:&#118;&#110;&#099;&#097;&#115;&#116;&#097;&#110;&#104;&#101;&#105;&#114;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+                        target="_blank">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
                 </div>
                 <div class="contact-icon">
                     <a href="https://github.com/vncastanheira" target="_blank">
@@ -67,12 +73,40 @@
             </div>
         </section>
     </div>
+    <div class="overlay-dialog" project="retrocontroller">
+        <div>
+            <a class="dialog-close" onclick="toggleDialog('retrocontroller')" href="javascript:void(0);">
+                <i class="fas fa-window-close"></i>
+            </a>
+            <h1>Retro Character Controller</h1>
+            <p><strong>Retro Character Controller</strong> is an Asset Pack for the Unity game engine.</p>
+            <p>You will be able make <strong>first-person</strong> games with character movement that <strong>feels good
+                    to play</strong> and is reminescent from past games like <strong>Quake</strong> and
+                <strong>Half-Life</strong>.</p>
+            <p>Check out the video below!</p>
+            <!-- <video width="320" height="240" controls>
+                <source src="assets/surfing.mp4" type="video/mp4">
+            </video> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LP46eNqQ8wM" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div style="margin-left: auto; margin-right: auto; width:360px">
+                <a class="asset-link"
+                    href="https://assetstore.unity.com/packages/tools/physics/retro-character-controller-136481"
+                    target="_blank">
+                    <object data="assets/asset-store-badge.svg" type="image/svg+xml" width="360px" height="auto">
+                        <!-- <img src="yourfallback.jpg" /> -->
+                    </object>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 <footer>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    
+    <link rel="stylesheet" href="dialog/dialog.css">
 
     <!-- <script src="https://kit.fontawesome.com/61eb39253a.js" crossorigin="anonymous"></script> -->
 </footer>
+
 </html>
