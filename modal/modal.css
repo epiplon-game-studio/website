@@ -2,7 +2,7 @@ html {
     --dialog-duration: 0.3s;
 }
 
-.overlay-dialog {
+.modal {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.9);
     width: 90vw;
@@ -12,15 +12,29 @@ html {
     top: 100vh;
 }
 
-.overlay-dialog div {
-    margin: 50px;
-}
-
-.overlay-dialog .dialog-close {
+.dialog-close {
     color: white;
     position: absolute;
-    right: 50px;
-    font-size: 64px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 4vw;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px;
+}
+.modal-title {}
+.modal-description
+{
+    margin: 0 30px;
+}
+.modal-media {
+    background-color: thistle;
+    height: auto;
+    margin: 0 30px;
 }
 
 .show {
@@ -59,6 +73,15 @@ html {
     }
 }
 
+.video-container {
+
+}
+
+.asset-store {
+    margin: 40px auto;
+    width:360px;
+}
+
 .asset-link {
     position: relative;
     display: inline-block;
@@ -71,4 +94,32 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .overlay-dialog div {
+        margin: 20px;
+    }
+
+    .overlay-dialog .dialog-close {
+        font-size: 2em;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

@@ -1,4 +1,4 @@
-const dialogs = document.getElementsByClassName("overlay-dialog");
+const dialogs = document.getElementsByClassName("modal");
 
 function toggleDialog(project) {
     for (let index = 0; index < dialogs.length; index++) {
