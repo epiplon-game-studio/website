@@ -4,11 +4,11 @@ import Layout from '../layout'
 export default function RetroController() {
     return (
         <Layout>
-            <div className="modal-title">
+            <div className="title">
                 <h3>Retro Character Controller</h3>
             </div>
-            <div className="modal-content">
-                <div className="modal-description">
+            <div className="content">
+                <div className="description">
                     <p><strong>Retro Character Controller</strong> is an Asset Pack for the Unity game engine.</p>
                     <p>You will be able make <strong>first-person</strong> games with character movement that <strong>feels
                             good

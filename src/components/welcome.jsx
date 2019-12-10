@@ -39,9 +39,6 @@ class Welcome extends React.Component {
             </Layout>
         );
     }
-
-
-
 }
 
 export default Welcome;

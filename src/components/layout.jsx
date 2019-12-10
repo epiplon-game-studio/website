@@ -1,32 +1,16 @@
 import React from 'react'
 import Navbar from './navbar'
+import { HashRouter as Router, Route } from 'react-router-dom'
 var _ = require('lodash');
 
 class Layout extends React.Component {
-    componentDidMount() {
-        const navbar = document.getElementById('navbar')
-        document.addEventListener('scroll', e => {
-            if(window.scrollY > 300)
-            {
-                navbar.style.animationName = 'showNavbar'
-                navbar.style.animationDirection = 'normal'
-                navbar.style.animationFillMode = 'forwards'
-            }
-            else
-            {
-                if(navbar.style.animationName === 'showNavbar')
-                    navbar.style.animationName = 'hideNavbar'
-            }
-        })
-    }
-
     render(props){
         return (
-            <div>
-                <Navbar></Navbar>
+            <Router>
+                <Route path="/" component={Navbar} />
                 {this.props.children}
                 <div id="background"></div>
-            </div>
+            </Router>
         )
     }
 }
