@@ -4,7 +4,9 @@ body {
     min-height: 99vh;
 }
 
+
 /* GENERAL */
+
 h1,
 h2,
 h3,
@@ -62,12 +64,12 @@ strong {
 #intro {
     margin: 0;
     height: 60vh;
+    padding-top: 25vh;
 }
 
 #logo {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25vh;
     width: 200px;
     height: 200px;
     background-image: url("mimic_portrait.png");
@@ -118,6 +120,10 @@ section {
     border-radius: var(--project-border);
 }
 
+.project {
+    margin-top: 120px;
+}
+
 #contact-list {
     display: grid;
     grid-template-columns: 32px 32px 32px 32px;
@@ -137,13 +143,15 @@ section {
     vertical-align: middle;
 }
 
+
 /* NAVBAR */
 
-nav, #navbar {
+nav,
+#navbar {
     position: fixed;
-    top:-100px;
+    top: -100px;
     left: 0;
-    right:0;
+    right: 0;
     width: 100%;
     height: 50px;
     background-color: #291c18;
@@ -158,17 +166,25 @@ nav, #navbar {
 }
 
 @keyframes showNavbar {
-    from {top: -50px;}
-    to {top: 0}
-}
-@keyframes hideNavbar {
-    to {top: -100px;}
-    from {top: 0}
+    from {
+        top: -50px;
+    }
+    to {
+        top: 0
+    }
 }
 
+@keyframes hideNavbar {
+    to {
+        top: -100px;
+    }
+    from {
+        top: 0
+    }
+}
 
 #navbar-logo {
-    position:absolute;
+    position: absolute;
     left: 50px;
     top: 25px;
     bottom: 0;
@@ -183,7 +199,7 @@ nav, #navbar {
 #navbar-menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    position:absolute;
+    position: absolute;
     right: 50px;
     color: white;
     list-style: none;
@@ -203,34 +219,27 @@ nav, #navbar {
     h3 {
         font-size: 6vw;
     }
-
     p {
         font-size: 14px;
     }
-
     #intro {
         height: 60vh;
     }
-
     #title {
         margin-left: 0;
         margin-right: 0;
     }
-
     section {
         margin-left: 15px;
         margin-right: 15px;
     }
-
     #project-list {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 300px 300px;
         grid-gap: 60px;
     }
-
     #contact-list {
         grid-gap: 40px;
     }
-
 }

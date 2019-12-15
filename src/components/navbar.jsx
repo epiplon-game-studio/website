@@ -8,31 +8,40 @@ function onLink(props, name) {
         )
     else
         return (
-            <Link to="/">{name}</Link>
+            <Link to={"/#"+name.toLowerCase().replace(/ /g, '-')}>{name}</Link>
         )
 }
 
 class Navbar extends React.Component {
     componentDidMount() {
         const navbar = document.getElementById('navbar')
-        document.addEventListener('scroll', e => {
-            if (window.scrollY > 300) {
-                navbar.style.animationName = 'showNavbar'
-                navbar.style.animationDirection = 'normal'
-                navbar.style.animationFillMode = 'forwards'
-            }
-            else {
-                if (navbar.style.animationName === 'showNavbar')
-                    navbar.style.animationName = 'hideNavbar'
-            }
-        })
+        console.log(this.props.alwaysShow === true)
+        if(this.props.alwaysShow == true)
+        {
+            navbar.style.animationName = 'showNavbar'
+            navbar.style.animationDirection = 'normal'
+            navbar.style.animationFillMode = 'forwards'
+        }
+        else {
+            document.addEventListener('scroll', e => {
+                if (window.scrollY > 300) {
+                    navbar.style.animationName = 'showNavbar'
+                    navbar.style.animationDirection = 'normal'
+                    navbar.style.animationFillMode = 'forwards'
+                }
+                else {
+                    if (navbar.style.animationName === 'showNavbar')
+                        navbar.style.animationName = 'hideNavbar'
+                }
+            })
+        }
     }
 
     render() {
         return (
             <div>
                 <nav id="navbar">
-                    <div id="navbar-logo"></div>
+                    <Link id="navbar-logo" to="/#intro"/>
                     <ul id="navbar-menu">
                         <li>{onLink(this.props, "Projects")}</li> {/*TODO dropdown*/}
                         <li>{onLink(this.props, "About")}</li>

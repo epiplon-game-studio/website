@@ -1,9 +1,11 @@
 import React from 'react';
+import { HashRouter as Router, Route } from 'react-router-dom'
 
 import Intro from './intro'
 import Projects from './projects'
 import GetInTouch from './get-in-touch'
 import Layout from './layout';
+import Navbar from './navbar'
 
 class Welcome extends React.Component {
     componentDidMount() {
@@ -16,6 +18,9 @@ class Welcome extends React.Component {
     render() {
         return (
             <Layout>
+                <Router>
+                <Route path="/" render={routeProps => <Navbar {...routeProps}/>}/>
+                </Router>
                 <div id="welcome">
                     <Intro />
                     <div id="content">
