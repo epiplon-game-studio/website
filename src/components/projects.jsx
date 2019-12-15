@@ -15,11 +15,11 @@ function Projects() {
                             </Link>
                         </div>
                         <div className="project-entry">
-                            <Link to={`/projects/retrocontroller`}>
+                            <div>
                                 <div className="project-image">
-                                    <img src="./assets/retro_controller.png" alt="Retro Controller"></img>
+                                    <img src="./assets/coming.jpg" alt="Coming"></img>
                                 </div>
-                            </Link>
+                            </div>
                         </div>
                     </div>
                 </section>
