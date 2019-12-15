@@ -53,7 +53,7 @@ strong {
     bottom: 0;
     background: url("background.jpg") no-repeat center #68280f;
     opacity: 0.4;
-    background-blend-mode: luminosity;
+    background-blend-mode: overlay;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,10 +118,6 @@ section {
     margin-right: auto;
     border: 3px solid black;
     border-radius: var(--project-border);
-}
-
-.project {
-    margin-top: 120px;
 }
 
 #contact-list {
@@ -212,7 +208,64 @@ nav,
     margin: auto 5px;
 }
 
-@media only screen and (max-width: 600px) {
+
+/* PROJECT PAGE */
+
+.project {
+    margin-top: 120px;
+}
+
+.project .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project .flex .right,
+.project .flex .left {
+    width: 50%;
+}
+
+.project .left {
+    margin-right: 50px;
+}
+
+.project-description {
+    max-width: 800px;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px;
+}
+
+.video-container {
+    text-align: center;
+    margin: 0;
+}
+
+.asset-store {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.asset-link {
+    position: relative;
+    display: inline-block;
+}
+
+.asset-link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 700px) {
     h1 {
         font-size: 8vw;
     }
@@ -241,5 +294,13 @@ nav,
     }
     #contact-list {
         grid-gap: 40px;
+    }
+    .project .flex {
+        flex-direction: column;
+    }
+    .project .flex .right,
+    .project .flex .left {
+        margin-bottom: 25px;
+        width: 100%;
     }
 }
