@@ -103,11 +103,11 @@ section {
 }
 
 .project-entry {
-    background-color: rgba(255, 166, 0, 0.068);
+    background-color: transparent;
 }
 
 .project-image {
-    height: 350px;
+    height: 18em;
 }
 
 .project-image img {
@@ -148,7 +148,7 @@ nav,
     top: -100px;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     background-color: #291c18;
     z-index: 2;
@@ -166,7 +166,7 @@ nav,
         top: -50px;
     }
     to {
-        top: 0
+        top: -1px;
     }
 }
 
@@ -175,13 +175,13 @@ nav,
         top: -100px;
     }
     from {
-        top: 0
+        top: -1px;
     }
 }
 
 #navbar-logo {
     position: absolute;
-    left: 50px;
+    left: 60px;
     top: 25px;
     bottom: 0;
     margin: auto 0;
@@ -193,19 +193,19 @@ nav,
 }
 
 #navbar-menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: absolute;
-    right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
     color: white;
     list-style: none;
     vertical-align: middle;
     text-align: center;
+    margin-right: 20px;
 }
 
 #navbar-menu li {
     font-weight: bold;
-    margin: auto 5px;
+    margin: auto 10px;
 }
 
 
@@ -281,6 +281,9 @@ nav,
     #title {
         margin-left: 0;
         margin-right: 0;
+    }
+    #navbar-logo {
+        left: 20px;
     }
     section {
         margin-left: 15px;

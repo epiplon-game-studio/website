@@ -15,7 +15,7 @@ function onLink(props, name) {
 class Navbar extends React.Component {
     componentDidMount() {
         const navbar = document.getElementById('navbar')
-        console.log(this.props.alwaysShow === true)
+        // pass alwaysShow={true} to keep the navbar visible
         if(this.props.alwaysShow == true)
         {
             navbar.style.animationName = 'showNavbar'

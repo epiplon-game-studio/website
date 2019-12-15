@@ -6,7 +6,6 @@ class Layout extends React.Component {
     render(props){
         return (
             <Router>
-                {/* <Route path="/" component={Navbar} /> */}
                 {this.props.children}
                 <div id="background"></div>
             </Router>

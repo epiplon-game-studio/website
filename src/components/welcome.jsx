@@ -18,9 +18,7 @@ class Welcome extends React.Component {
     render() {
         return (
             <Layout>
-                <Router>
-                <Route path="/" render={routeProps => <Navbar {...routeProps}/>}/>
-                </Router>
+				<Route path="/" render={routeProps => <Navbar {...routeProps}/>} />
                 <div id="welcome">
                     <Intro />
                     <div id="content">
