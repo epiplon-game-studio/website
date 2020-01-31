@@ -24,13 +24,11 @@ class RetroController extends React.Component {
 								<p>You will be able make <strong>first-person</strong> games with character movement that <strong>feels good to play</strong> and is reminescent from past games like <strong>Quake</strong> and
 							<strong>Half-Life</strong>.</p>
 							</div>
-							
+
 						</div>
 						<div className="right">
 							<div className="video-container">
-								<iframe width="300" height="150" src="https://www.youtube.com/embed/LP46eNqQ8wM" frameborder="0"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+								<div class='embed-container'><iframe src='https://www.youtube.com/embed//LP46eNqQ8wM' frameborder='0' allowfullscreen></iframe></div>
 							</div>
 							<div className="asset-store">
 								<a className="asset-link"
