@@ -1,5 +1,6 @@
 body {
     --project-border: 5%;
+    --mimic_portrait: url("mimic_portrait.webp");
     background-image: linear-gradient(#624338, #291c18);
     min-height: 99vh;
 }
@@ -51,7 +52,7 @@ strong {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("background.jpg") no-repeat center #68280f;
+    background: url("background.webp") no-repeat center #68280f;
     opacity: 0.4;
     background-blend-mode: overlay;
     -webkit-background-size: cover;
@@ -72,7 +73,7 @@ strong {
     margin-right: auto;
     width: 200px;
     height: 200px;
-    background-image: url("mimic_portrait.png");
+    background-image: var(--mimic_portrait);
     background-size: contain;
     border-radius: 50%;
 }
@@ -123,7 +124,6 @@ section {
 #contact-list {
     display: grid;
     grid-template-columns: 32px 32px 32px 32px;
-    /* grid-template-row: 32px; ????? */
     grid-gap: 64px;
 }
 
@@ -189,7 +189,7 @@ nav,
     margin: auto 0;
     width: 64px;
     height: 64px;
-    background-image: url("mimic_portrait.png");
+    background-image: var(--mimic_portrait);
     background-size: contain;
     border-radius: 50%;
 }

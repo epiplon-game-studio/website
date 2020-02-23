@@ -10,7 +10,7 @@ function Projects() {
                         <div className="project-entry">
                             <Link to={`/projects/retrocontroller`}>
                                 <div className="project-image">
-                                    <img src="./assets/retro_controller.png" alt="Retro Controller"></img>
+                                    <img src="./assets/retro_controller.webp" alt="Retro Controller"></img>
                                 </div>
                             </Link>
                         </div>
