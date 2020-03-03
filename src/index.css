@@ -92,6 +92,7 @@ section {
     margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 25px;
+    scroll-margin-top: 5rem;
 }
 
 #project-list {
