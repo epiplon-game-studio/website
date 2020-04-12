@@ -16,7 +16,7 @@ class Navbar extends React.Component {
     componentDidMount() {
         const navbar = document.getElementById('navbar')
         // pass alwaysShow={true} to keep the navbar visible
-        if(this.props.alwaysShow == true)
+        if(this.props.alwaysShow === true)
         {
             navbar.style.animationName = 'showNavbar'
             navbar.style.animationDirection = 'normal'

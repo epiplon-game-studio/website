@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link';
 
 import Layout from '../layout'
@@ -29,7 +29,7 @@ class RetroController extends Component {
 						</div>
 						<div className="right">
 							<div className="video-container">
-								<div className='embed-container'><iframe src='https://www.youtube.com/embed//Czx0p-B1WJg' frameBorder='0' allowFullScreen></iframe></div>
+								<div className='embed-container'><iframe title="retrocontroller" src='https://www.youtube.com/embed//Czx0p-B1WJg' frameBorder='0' allowFullScreen></iframe></div>
 							</div>
 							<div className="asset-store">
 								<a className="asset-link"
@@ -41,7 +41,7 @@ class RetroController extends Component {
 								</a>
 							</div>
 							<div id="changelog">
-								<Link to={`changelog`}>Changelog</Link>
+								<Link to={`/projects/changelog`}>Changelog</Link>
 							</div>
 						</div>
 					</div>
