@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 
 import Layout from '../layout'
 import Navbar from '../navbar'
 
-class RetroController extends React.Component {
+class RetroController extends Component {
 	componentWillMount() {
 		window.scrollTo(0, 0);
 	}
@@ -28,7 +29,7 @@ class RetroController extends React.Component {
 						</div>
 						<div className="right">
 							<div className="video-container">
-								<div class='embed-container'><iframe src='https://www.youtube.com/embed//LP46eNqQ8wM' frameborder='0' allowfullscreen></iframe></div>
+								<div className='embed-container'><iframe src='https://www.youtube.com/embed//Czx0p-B1WJg' frameBorder='0' allowFullScreen></iframe></div>
 							</div>
 							<div className="asset-store">
 								<a className="asset-link"
@@ -38,6 +39,9 @@ class RetroController extends React.Component {
 										<img src="" alt="Asset Store Link" />
 									</object>
 								</a>
+							</div>
+							<div id="changelog">
+								<Link to={`changelog`}>Changelog</Link>
 							</div>
 						</div>
 					</div>
