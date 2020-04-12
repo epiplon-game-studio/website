@@ -270,9 +270,17 @@ nav,
     left: 0;
 }
 
-#changelog { 
+.changelog-link { 
     text-align: center;
     text-transform: uppercase;
+}
+
+.changelog {
+    background-color: #1e1e1e;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-style: 'consola';
 }
 
 @media only screen and (max-width: 700px) {
