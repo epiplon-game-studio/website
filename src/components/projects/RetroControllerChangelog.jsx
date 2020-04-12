@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
-import { HashLink as Link } from 'react-router-hash-link';
 
 import Layout from '../layout'
 import Navbar from '../navbar'
 
-class Changelog extends Component {
+class RetroControllerChangelog extends Component {
     componentWillMount() {
 		window.scrollTo(0, 0);
 	}
@@ -14,11 +13,13 @@ class Changelog extends Component {
         return (
             <Layout>
                 <Route path="/" render={routeProps => <Navbar {...routeProps} alwaysShow={true} />} />
-                <h1>Retro Controller</h1>
-                <h3>Changelog:</h3>
+                <section className="project">
+                    <h3>Retro Controller</h3>
+                    <h5>Changelog:</h5>
+                </section>
             </Layout>
         )
     }
 }
 
-export default Changelog;
+export default RetroControllerChangelog;
