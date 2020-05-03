@@ -40,12 +40,7 @@ class RetroController extends Component {
             <div className="right">
               <div className="video-container">
                 <div className="embed-container">
-                  <iframe
-                    title="retrocontroller"
-                    src="https://www.youtube.com/embed//Czx0p-B1WJg"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
+                  <iframe title="retrocontroller" src="https://player.vimeo.com/video/414577245" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
               </div>
               <div className="asset-store">
