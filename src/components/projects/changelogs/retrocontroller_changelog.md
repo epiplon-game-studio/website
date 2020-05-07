@@ -1,3 +1,12 @@
+<b>2.3.2 Hotfix (April 8, 2020)</b>
+- New Controller Rigidbody Property
+- Fixed Ducking in all gravity orientations
+- Fixed Soldier Animation positioning
+- Fixed Controller Gizmos
+- Known issues:
+  - walking on stairs in non Y-axis oriented gravity
+  - proper animation in non Y-axis oriented gravity (doesn't affect gameplay)
+
 <b>2.3.1 (March 23, 2020)</b>
 - Fixed Retro Double Jump bug.
 
