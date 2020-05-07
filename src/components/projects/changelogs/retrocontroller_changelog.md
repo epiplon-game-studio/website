@@ -1,4 +1,4 @@
-<b>2.3.2 Hotfix (April 8, 2020)</b>
+<b>2.3.2 Hotfix (May 7, 2020)</b>
 - New Controller Rigidbody Property
 - Fixed Ducking in all gravity orientations
 - Fixed Soldier Animation positioning
