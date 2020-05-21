@@ -1,4 +1,8 @@
-<b>2.3.2 Hotfix (May 7, 2020)</b>
+<b>2.3.4 (May 21, 2020)</b>
+- Fixed ground step detection on multiple orientations
+- Fixed not returning to standing state after ducking on slopes
+
+<b>2.3.2 Hotfix (April 8, 2020)</b>
 - New Controller Rigidbody Property
 - Fixed Ducking in all gravity orientations
 - Fixed Soldier Animation positioning
