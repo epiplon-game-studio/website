@@ -60,9 +60,14 @@ class RetroController extends Component {
                   </object>
                 </a>
               </div>
-              <div className="changelog-link">
+              <div className="extra-link">
                 <Link to={`/projects/retrocontroller/changelog`}>
                   Changelog
+                </Link>
+              </div>
+              <div className="extra-link">
+                <Link to={`/projects/retrocontroller/faq`}>
+                  FAQ
                 </Link>
               </div>
             </div>

@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 400;
 }
 
@@ -270,10 +270,14 @@ nav,
     left: 0;
 }
 
-.changelog-link { 
+.extra-link { 
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 8px;
 }
+
+/* CHANGELOG */
+
 
 .changelog {
     background-color: #1e1e1e;
@@ -281,6 +285,33 @@ nav,
     border-radius: 5px;
     padding: 20px 30px;
     font-style: 'consola';
+}
+
+/* FAQ */
+
+.faq {
+    margin-top: 120px;
+    max-width: 960px;
+    margin: 150px auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq-question {
+    margin: 10px;
+}
+
+.faq-question-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange;
+}
+
+.faq-question-content {
+    border: 1px solid rgba(211, 211, 211, 0.267);
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 700px) {
