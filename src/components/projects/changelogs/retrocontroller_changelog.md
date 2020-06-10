@@ -1,3 +1,6 @@
+<b>2.4 (Jun 8, 2020)</b>
+- New UpdateController method
+
 <b>2.3.4 (May 21, 2020)</b>
 - Fixed ground step detection on multiple orientations
 - Fixed not returning to standing state after ducking on slopes
