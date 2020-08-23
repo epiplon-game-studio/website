@@ -1,0 +1,22 @@
+nav,
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #291c18;
+    z-index: 2;
+    animation: none;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    box-shadow: 0 5px 4px black;
+
+    a {
+        color: white;
+    }
+}

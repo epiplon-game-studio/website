@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
-import Layout from "../layout";
-import Navbar from "../navbar";
+import { Layout, Navbar, PageTitleComponent } from "../";
 
 class RetroController extends Component {
   componentWillMount() {
@@ -17,10 +16,8 @@ class RetroController extends Component {
           path="/"
           render={(routeProps) => <Navbar {...routeProps} alwaysShow={true} />}
         />
+        <PageTitleComponent title={"Retro Character Controller"}></PageTitleComponent>
         <section className="project">
-          <div className="title">
-            <h3>Retro Character Controller</h3>
-          </div>
           <div className="flex">
             <div className="left">
               <div className="project-description">

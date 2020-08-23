@@ -1,0 +1,20 @@
+@import '../components';
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $blog-width;
+
+    a {
+        display: block;
+        width: 115px;
+        height: 25px;
+        background-color: rgb(255, 221, 158);
+        color: black;
+        font-weight: bold;
+        line-height: 25px;
+    }
+}

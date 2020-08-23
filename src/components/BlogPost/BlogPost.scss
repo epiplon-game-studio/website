@@ -1,0 +1,31 @@
+@import '../components';
+
+.blogpost {
+    background-color: rgba(48, 19, 0, 0.514);
+    padding: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $blog-width;
+}
+
+.blogpost__title {
+    font-size: 4vw;
+    color: white;
+    margin-bottom: 0;
+}
+
+.blogpost__date{
+    font-size: small;
+    color: lightgray;
+    margin: 5px;
+}
+
+.blogpost__readmore {
+    color:orange;
+
+    a {
+        color: orange;
+    }
+}

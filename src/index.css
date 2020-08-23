@@ -8,7 +8,6 @@ body {
 
 /* GENERAL */
 
-h1,
 h2,
 h3,
 h4,
@@ -19,18 +18,12 @@ p {
 }
 
 a {
-    color: white;
     text-decoration: none;
 }
 
 p {
     line-height: 1.2;
     font-weight: 300;
-}
-
-h1 {
-    font-size: 5vw;
-    font-weight: bold;
 }
 
 h2 {
@@ -142,45 +135,6 @@ section {
 
 
 /* NAVBAR */
-
-nav,
-#navbar {
-    position: fixed;
-    top: -100px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 50px;
-    background-color: #291c18;
-    z-index: 2;
-    animation: none;
-    animation-duration: 0.2s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    box-shadow: 0 5px 4px black;
-}
-
-@keyframes showNavbar {
-    from {
-        top: -50px;
-    }
-
-    to {
-        top: -1px;
-    }
-}
-
-@keyframes hideNavbar {
-    to {
-        top: -100px;
-    }
-
-    from {
-        top: -1px;
-    }
-}
 
 #navbar-logo {
     position: absolute;

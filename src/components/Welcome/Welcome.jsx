@@ -1,11 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
 
-import Intro from './intro'
-import Projects from './projects'
-import GetInTouch from './get-in-touch'
-import Layout from './layout';
-import Navbar from './navbar'
+import Intro from '../intro'
+import Projects from '../projects'
+import GetInTouch from '../get-in-touch'
+import { Layout } from '..';
 
 class Welcome extends React.Component {
     componentDidMount() {
@@ -18,7 +17,6 @@ class Welcome extends React.Component {
     render() {
         return (
             <Layout>
-				<Route path="/" render={routeProps => <Navbar {...routeProps}/>} />
                 <div id="welcome">
                     <Intro />
                     <div id="content">

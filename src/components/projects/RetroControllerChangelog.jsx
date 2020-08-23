@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import marked from "marked";
 
-import Layout from "../layout";
-import Navbar from "../navbar";
+import { Layout } from "../";
 
 class RetroControllerChangelog extends Component {
   constructor() {
@@ -33,13 +32,8 @@ class RetroControllerChangelog extends Component {
 
   render() {
     return (
-      <Layout>
-        <Route
-          path="/"
-          render={(routeProps) => <Navbar {...routeProps} alwaysShow={true} />}
-        />
+      <Layout pageTitle="Retro Controller Changelog">
         <section className="project">
-          <h2 style={{textAlign: "center"}}>Retro Controller Changelog</h2>
           <section className="changelog">
             <article dangerouslySetInnerHTML={{ __html: this.state.markdown }}></article>
           </section>

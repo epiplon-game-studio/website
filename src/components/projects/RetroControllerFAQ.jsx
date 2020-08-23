@@ -1,16 +1,11 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
-import Layout from "../layout";
-import Navbar from "../navbar";
+import { Layout } from "../";
 
 export default function RetroControllerFAQ() {
     return (
-        <Layout>
-            <Route
-                path="/"
-                render={(routeProps) => <Navbar {...routeProps} alwaysShow={true} />}
-            />
+        <Layout pageTitle="Retro Controller FAQ">
             <section className="faq">
                 <h2 style={{ textAlign: "center" }}>Retro Controller FAQ</h2>
                 <details className="faq-question">
