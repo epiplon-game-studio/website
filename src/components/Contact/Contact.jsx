@@ -3,14 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitterSquare, faDiscord, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopeSquare, } from '@fortawesome/free-solid-svg-icons'
 
-export default function GetInTouch() {
+import "./Contact.scss"
+
+export default function Contact() {
     return (
         <div>
-            <section id="get-in-touch">
+            <section className="contact">
                 <h2>Get in Touch</h2>
                 <div id="contact-list">
                     <div className="contact-icon">
-                        <a href="https://twitter.com/viniciusepiplon" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/epiplonstudio" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faTwitterSquare}></FontAwesomeIcon>
                         </a>
                     </div>
@@ -26,7 +28,7 @@ export default function GetInTouch() {
                         </a>
                     </div>
                     <div className="contact-icon">
-                        <a href="https://github.com/vncastanheira" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/epiplon-game-studio" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon>
                         </a>
                     </div>

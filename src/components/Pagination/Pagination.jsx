@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 import './Pagination.scss'
 
-export default function Pagination({page, totalPages}) {
+export default function Pagination({page, totalPages, onPageChanged}) {
     const nextPage = () => {
         let next = page
         next++
@@ -18,8 +18,8 @@ export default function Pagination({page, totalPages}) {
 
     return (
         <div className="pagination" data-testid="pagination">
-            {(page < totalPages) ? <Link to={`/blog?page=${nextPage()}`}>Next Page</Link> : <></>}
-            {(page > 1 && page <= totalPages) ? <Link to={`/blog?page=${previousPage()}`}>Previous Page</Link> : <></>}
+            {(page < totalPages) ? <Link to={`/blog?page=${nextPage()}`} onClick={() => onPageChanged()}>Next Page</Link> : <></>}
+            {(page > 1 && page <= totalPages) ? <Link to={`/blog?page=${previousPage()}`} onClick={() => onPageChanged()}>Previous Page</Link> : <></>}
         </div>
     )
 }

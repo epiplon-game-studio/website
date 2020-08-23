@@ -5,7 +5,7 @@ function Projects() {
     return (
         <Router>
             <section id="projects">
-                    <h2>Projects</h2>
+                    <h2>Maker of</h2>
                     <div id="project-list">
                         <div className="project-entry">
                             <Link to={`/projects/retrocontroller`}>

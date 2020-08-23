@@ -1,5 +1,7 @@
-import BlogContainer from './BlogContainer/BlogContainer'
+import BlogPostContainer from './BlogPostContainer/BlogPostContainer'
+import BlogPageContainer from './BlogPageContainer/BlogPageContainer'
 
 export {
-    BlogContainer
+    BlogPageContainer,
+    BlogPostContainer
 }

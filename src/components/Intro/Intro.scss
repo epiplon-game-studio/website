@@ -1,0 +1,22 @@
+.intro {
+    margin: 2vh 2vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.intro__logo {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: var(--mimic_portrait);
+    background-size: contain;
+    border-radius: 50%;
+}
+
+
+.intro__content {
+    font-size: 2em;
+    padding-left: 250px;
+    padding-right: 50px;
+}
